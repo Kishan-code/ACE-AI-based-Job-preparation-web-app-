@@ -63,7 +63,7 @@
 
 ## 📸 Screenshots
 
-> ⚠️ Make sure your folder name is exactly `screenshots` (case-sensitive)
+
 
 ### Splash Screen
 ![Splash Screen](./screenshots/splash-screen-loader.png)
