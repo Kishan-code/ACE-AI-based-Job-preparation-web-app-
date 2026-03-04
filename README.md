@@ -1,4 +1,4 @@
-# 🎯 Job Preparation Web App
+# 🎯 (ACE) Job Preparation Web App
 
 > **Ace Your Interviews with AI-Powered Analysis** — An intelligent platform that analyzes your resume against job descriptions and generates personalized interview insights, questions, and comprehensive feedback.
 
