@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import { RouterProvider } from "react-router-dom";
 import router from "./routes/BrowserRouter";
 import { ToastContainer } from "react-toastify";
-import SplashScreen from "./components/SplashScreen"
+import SplashScreen from "./components/SplashScreen";
 import { useDispatch } from "react-redux";
 import { checkUserAuthThunk } from "./store/features/user/user.thunk";
 
 const App = () => {
-
   const dispatch = useDispatch();
   const [appReady, setAppReady] = useState(false);
 
@@ -15,25 +14,21 @@ const App = () => {
     const initializeApp = async () => {
       await Promise.all([
         dispatch(checkUserAuthThunk()),
-        new Promise(resolve => setTimeout(resolve, 3000))
+        new Promise((resolve) => setTimeout(resolve, 3000)),
       ]);
 
       setAppReady(true);
     };
 
     initializeApp();
-  }, []);
+  }, [dispatch]);
 
   if (!appReady) return <SplashScreen />;
 
   return (
     <>
       <RouterProvider router={router} />
-      <ToastContainer
-        position="bottom-right"
-        autoClose={3000}
-        theme="dark"
-      />
+      <ToastContainer position="bottom-right" autoClose={3000} theme="dark" />
     </>
   );
 };

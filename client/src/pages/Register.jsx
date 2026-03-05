@@ -212,7 +212,6 @@ const registerHandler = async () => {
           Already have an account?{" "}
           <NavLink
             to="/login"
-            replace
             className="text-violet-400 hover:text-violet-300 transition-colors duration-200 font-medium"
           >
             Login

@@ -173,7 +173,6 @@ const loginHandler = async () => {
           Don't have an account?{" "}
           <NavLink
             to="/register"
-            replace
             className="text-violet-400 hover:text-violet-300 transition-colors duration-200 font-medium"
           >
             Register

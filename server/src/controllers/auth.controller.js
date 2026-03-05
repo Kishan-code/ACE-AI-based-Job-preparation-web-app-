@@ -120,7 +120,7 @@ const checkAuth = async (req, res, next) => {
   try {
     const userId = req.userId;
     const user = await UserModel.findOne({_id:userId});
-    
+  
 
     if(!user) return next(errorHandlerMiddleware.errorHandler(StatusCodes.NOT_FOUND,"user not exists"));
 

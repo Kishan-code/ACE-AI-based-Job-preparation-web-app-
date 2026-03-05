@@ -18,7 +18,6 @@ import SectionHeader from "../components/SectionHeader";
 import EditableField from "../components/EditableField";
 import DeleteModal from "../components/DeleteModal";
 import { deleteUserThunk, updateProfileThunk } from "../store/features/user/user.thunk";
-import Loader from "../components/Loader";
 import { toast } from "react-toastify";
 
 /* ── animation helpers ── */

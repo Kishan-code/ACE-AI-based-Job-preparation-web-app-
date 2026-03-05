@@ -18,7 +18,6 @@ const initialState = {
 const userSlice = createSlice({
   name: "auth",
   initialState,
-  reducers: {},
   extraReducers: (builder) => {
     // LOGIN THUNK REDUCER
     builder.addCase(loginUserThunk.pending, (state, action) => {
@@ -74,8 +73,8 @@ const userSlice = createSlice({
     });
     builder.addCase(checkUserAuthThunk.rejected, (state, action) => {
       state.loading = false;
-      state.user = null;
       state.isAuthenticated = false;
+      state.user = null;
     });
 
     // UPDATE PROFILE THUNK REDUCER (to be implemented)
@@ -96,8 +95,8 @@ const userSlice = createSlice({
     });
     builder.addCase(deleteUserThunk.fulfilled, (state, action) => {
       state.loading = false;
-      state.user = null;
       state.isAuthenticated = false;
+      state.user = null;
     });
     builder.addCase(deleteUserThunk.rejected, (state, action) => {
       state.loading = false;
