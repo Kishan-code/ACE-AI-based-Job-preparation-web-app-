@@ -26,14 +26,14 @@ The goal of this project is to simplify the interview preparation journey by pro
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Quick Start](#quick-start)
-- [Usage Guide](#usage-guide)
-- [Contributing](#contributing)
-- [Author](#author)
+- [Features](#-features)
+- [Screenshots](#-screenshots)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Quick Start](#-quick-start)
+- [Usage Guide](#-usage-guide)
+- [Contributing](#-contributing)
+- [Author](#-author)
 
 ---
 
